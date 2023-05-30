@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="_index.scss">
+    <title>Local Shopee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        #left-side{
+            position: relative;
+            top: 30%;
+            width: 600px;
+            height: 600px;
+        }
+        #right-side{
+            position: absolute;
+            top: 44%;
+            left: 45%;
+            width: 650px;
+            height: 550px;
+        }
+        #heading{
+            font-family: 'Roboto', sans-serif; font-size: 35px;
+        }
+        #discount{
+            color: green;
+            font-family: 'Poppins', sans-serif;
+        }
+        #price{
+            font-family: 'Poppins', sans-serif;
+            font-size: 30px;
+        }
+        #info{
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .primary{
+    background: rgba(255, 234, 0, 0.525);
+  border-radius: 20px;
+  box-shadow: 0 3px 3px #888888;
+  text-align: center;
+  }
+  #gallery{
+    position: absolute;
+    top: 114%;
+    left: 35%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: 12px 60px;
+    height: 100px;
+    width: 700px;
+    font-family: 'Roboto', sans-serif; font-size: 20px;
+    font-weight: bold;
+  }
+  .cccontainer {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      background-color: #f5f5f5;
+      margin: 20px;
+    }
+
+    .product-image {
+      width: 40%;
+      padding-right: 20px;
+    }
+
+    .product-info {
+      width: 50%;
+    }
+    .buy-button {
+      width: 10%;
+    }
+
+    .hh2 {
+      font-size: 24px;
+      margin: 0 0 10px;
+    }
+
+    .pp {
+      margin: 0;
+      line-height: 1.5;
+      font-weight: bold;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .rating {
+      color: #ffa500;
+    }
+    </style>
+
+</head>
+<body style="background-color: rgb(255, 255, 255); font-family: Calibri;">
+    <!-- head nav -->
+    <ul class="nav justify-content-end navbar navbar-dark bg-dark">
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-current="page" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled"  tabindex="-1" aria-disabled="true">Contact +91 9665555146</a>
+        </li>
+      </ul>
+
+      <!-- logo nav --> 
+          <a class="navbar-brand"><img src="LSlogo.png" alt="Logo" height="20%" width="20%"></a>
+          <div style="position: absolute;left: 78%; top:18%;"><h3>
+            Login <span style="color: rgb(255, 255, 255);">sign </span>
+            <span>Logout</span>
+          </h3>
+        </div>
+
+
+
+      <!-- category nav -->
+      <ul class="nav justify-content-left" style="background-color: rgb(236, 236, 236); margin: 10px 0px 10px 0px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Smartphones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">TV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">tablets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link acitve" href="#" tabindex="-1" aria-disabled="true">Laptop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link acitve" href="#" tabindex="-1" aria-disabled="true">Wearable Tech</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link acitve" href="#" tabindex="-1" aria-disabled="true">Audio</a>
+        </li>
+      </ul>
+
+
+<div id="left-side">
+    <img src="y56.jpg" alt="" height="100%" width="100%">
+</div>
+<div id="right-side">
+    <p id="heading">VIVO Y56 5G (8 GB RAM + 128 GB ROM) <br> (Orange Shimmer)</p>
+    <p> <button type="button" class="btn btn-primary">4.5⭐</button></button> </p>
+    <p id="discount">Extra ₹ 5 000 off</p>
+    <p id="price"> ₹ 19,999 <s>₹ 24,999</s>   <b style="color: green;">20% off</b></p>
+   <li id="info">8 GB RAM | 128 GB ROM</li>
+   <li id="info">16.71 cm (6.58 inch) Full HD+ Display</li>
+   <li id="info">50MP + 2MP | 16MP Front Camera</li>
+   <li id="info">5000 mAh Battery</li>
+</div>
+
+<header>
+  <section id="gallery">
+    <div class="primary"><p></p><p>NO COST EMI UPTO</p><p>88/mo</p></div>
+    <div class="primary"><p></p><p>BANK DISCOUNT UPTO</p><p>₹ 00 000</p></div>
+    <div class="primary"><p></p><p>FREE ACCESSORIES WORTH</p><p>₹ 00 000</p></div>
+  </section>
+</header>
+
+
+  <div class="cccontainer">
+    <div class="product-image">
+      <img src="path_to_your_image.jpg" alt="Product Image">
+    </div>
+    <div class="product-info">
+      <h2 class="hh2">New Pravin Communication</h2>
+      <p class="price pp">Price: $19.99</p>
+      <p class="rating pp">Rating: 4.5 stars</p>
+      <p> Stock Available : <b style="color: green;">YES</b></p>
+    </div>
+    <div class="buy-button">
+      <button type="button" class="btn btn-primary btn-lg">BUY NOW</button>
+    </div>
+  </div>
+
+
+  <div class="cccontainer">
+    <div class="product-image">
+      <img src="path_to_your_image.jpg" alt="Product Image">
+    </div>
+    <div class="product-info">
+      <h2 class="hh2">Product Name</h2>
+      <p class="price pp">Price: $19.99</p>
+      <p class="rating pp">Rating: 4.5 stars</p>
+      <p> Stock Available : <b style="color: green;">YES</b></p>
+    </div>
+    <div class="buy-button">
+      <button type="button" class="btn btn-primary btn-lg">BUY NOW</button>
+    </div>
+  </div>
+
+
+  <div class="cccontainer">
+    <div class="product-image">
+      <img src="path_to_your_image.jpg" alt="Product Image">
+    </div>
+    <div class="product-info">
+      <h2 class="hh2">Product Name</h2>
+      <p class="price pp">Price: $19.99</p>
+      <p class="rating pp">Rating: 4.5 stars</p>
+      <p> Stock Available : <b style="color: red;">NO</b></p>
+    </div>
+    <div class="buy-button">
+      <button type="button" class="btn btn-primary btn-lg">BUY NOW</button>
+    </div>
+  </div>
+
+
+  <div class="cccontainer">
+    <div class="product-image">
+      <img src="path_to_your_image.jpg" alt="Product Image">
+    </div>
+    <div class="product-info">
+      <h2 class="hh2">Product Name</h2>
+      <p class="price pp">Price: $19.99</p>
+      <p class="rating pp">Rating: 4.5 stars</p>
+      <p> Stock Available : <b style="color: rgb(248, 124, 0);">LIMITED STOCK</b></p>
+    </div>
+    <div class="buy-button">
+      <button type="button" class="btn btn-primary btn-lg">BUY NOW</button>
+    </div>
+  </div>
+
+
+
+
+
+
+
+<br>
+  <footer
+          class="text-center text-lg-start text-black"
+          style="background-color: #dcdcdc"
+          >
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h4 class="text-uppercase mb-4 font-weight-bold">
+              LOCAL shopee
+            </h4>
+            <p>
+                "Elevate your shopping experience: Save money, support local businesses, and empower communities."
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+            <p>
+              <a class="text-black">Smartphone & Tablets</a>
+            </p>
+            <p>
+              <a class="text-black">TV</a>
+            </p>
+            <p>
+              <a class="text-black">Laptop</a>
+            </p>        
+            <p>
+              <a class="text-black">Wearable Tech</a>
+            </p>        
+            <p>
+              <a class="text-black">Audio</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Brands</h6>
+            <p>
+              <a class="text-black">APPLE</a>
+            </p>
+            <p>
+              <a class="text-black">SAMSUNG</a>
+            </p>
+            <p>
+              <a class="text-black">ONEPLUS</a>
+            </p>        
+            <p>
+              <a class="text-black">VIVO</a>
+            </p>        
+            <p>
+              <a class="text-black">More>></a>
+            </p>
+          </div>
+          <!-- Grid column -->
+          
+
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+        
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p><i class="fas fa-home mr-3"></i> Gadhinglaj 416502</p>
+            <p><i class="fas fa-envelope mr-3"></i> localshopee@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 91 966 555 5146</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-3">
+
+      <!-- Section: Copyright -->
+      <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8 text-center text-md-start">
+  
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            <!-- Facebook -->
+            <img src="insta.png" height="15%" width="15%" style="margin: 0px 10px 0px 10px;">
+
+            <!-- Twitter -->
+            <img src="whatapplogo.png" height="10%" width="10%" style="margin: 0px 10px 0px 10px;">
+
+            <!-- Google -->
+            <img src="logo-facebookpng-32258.png" height="10%" width="10%" style="margin: 0px 10px 0px 10px;">
+
+            <!-- Instagram -->
+            <img src="lokasi-logo-25358.png" height="10%" width="10%" style="margin: 0px 10px 0px 10px;">
+          </div>
+          <!-- Grid column -->
+        </div>
+      </section>
+      <!-- Section: Copyright -->
+    </div>
+    <!-- Grid container -->
+  </footer>
+  <!-- Footer -->
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
