@@ -26,10 +26,8 @@
 }
 
 .card-img-top {
-    width: auto;
-    height: auto;
-    border-radius: 50%;
-
+ 
+    margin:20px 0px 0px 0px;
 }
 
 .card-body {
@@ -41,7 +39,7 @@
 }
 
 .card-text {
-    color: grey;
+    color: black;
 }
 
 .logs {
@@ -64,20 +62,7 @@
     box-sizing: border-box;
   }
   
-  .zoom {
-    padding: 50px;
-    background-color: green;
-    transition: transform 2s;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-  }
-  
-  .zoom:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5); 
-  }
+ 
 
 
   #top {
