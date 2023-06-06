@@ -15,7 +15,7 @@ def company():
   return render_template('company.html')
 
 @app.route("/login")
-def company():
+def login():
   return render_template('login.html')
 
 @app.route("/signup")
